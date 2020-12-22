@@ -1,0 +1,43 @@
+tmsh list sys sshd inactivity-timeout#600
+tmsh list sys sshd banner#enabled
+tmsh list sys sshd banner-text #"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. At any time, the USG may inspect and seize data stored on this IS. Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG authorized purpose. This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+tmsh list sys ntp timezone#UTC
+tmsh list sys db ui.advisory.enabled value#true
+tmsh list sys db ui.advisory.color value#green
+tmsh list sys db ui.advisory.text value#"//UNCLASSIFIED//"
+tmsh list sys db ui.system.preferences.advancedselection value#advanced
+tmsh list sys db ui.system.preferences.recordsperscreen value#100
+tmsh list sys db ui.system.preferences.startscreen value#network_map
+tmsh list sys db ui.users.redirectsuperuserstoauthsummary value#true
+tmsh list sys db dns.cache value#enable
+tmsh list sys db big3d.minimum.tls.version value#TLSV1.2
+tmsh list sys db liveinstall.checksig value#enable
+tmsh list sys httpd auth-pam-dashboard-timeout#on
+tmsh list sys httpd max-clients#10
+tmsh list sys httpd auth-pam-idle-timeout#600
+tmsh list sys httpd ssl-ciphersuite#FIPS:!RSA:!SSLv3:!TLSv1:!3DES:!ADH
+tmsh list sys httpd ssl-protocol#all -SSLv3 -TLSv1
+tmsh list sys httpd redirect-http-to-https#enabled
+tmsh list cli global-settings idle-timeout#10
+tmsh list sys global-settings console-inactivity-timeout#600
+tmsh list sys software update auto-check#disabled
+tmsh list sys software update auto-phonehome#disabled
+tmsh list sys daemon-log-settings mcpd audit#enabled
+tmsh list sys daemon-log-settings mcpd log-level#notice
+tmsh list sys global-settings gui-security-banner#enabled
+tmsh list sys global-settings gui-security-banner-text #"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. At any time, the USG may inspect and seize data stored on this IS. Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG authorized purpose. This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+tmsh list gtm global-settings general#iquery-minimum-tls-version TLSv1.2
+tmsh list sys snmp communities#none
+tmsh list sys daemon-log-settings tmm os-log-level#informational
+tmsh list sys daemon-log-settings tmm ssl-log-level#informational
+tmsh list auth password-policy expiration-warning#7
+tmsh list auth password-policy max-duration#60
+tmsh list auth password-policy max-login-failures#3
+tmsh list auth password-policy min-duration#1
+tmsh list auth password-policy minimum-length#15
+tmsh list auth password-policy password-memory#5
+tmsh list auth password-policy policy-enforcement#enabled
+tmsh list auth password-policy required-lowercase#2
+tmsh list auth password-policy required-numeric#2
+tmsh list auth password-policy required-special#2
+tmsh list auth password-policy required-uppercase#2
