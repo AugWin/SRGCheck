@@ -25,7 +25,6 @@ Whi=$(tput bold;tput setaf 7)
 ### Script
 
 # Init output files
-echo "##### srgcheck.sh script run at $(date)" > $output
 echo "##### $(date) To restore config settings, run 'tmsh load sys config merge file <filename>'" > $output
 
 echo "##### srgcheck.sh script run at $(date)" >> $logfile
