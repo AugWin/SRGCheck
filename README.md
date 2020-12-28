@@ -1,6 +1,6 @@
 # SRGCheck
  
-Runs on a BIG-IP to configure to STIGs/SRGs for DoDIN APL.  Currently configures BIG-IP v14.1.
+Runs on a BIG-IP to configure to STIGs/SRGs for DoDIN APL.  Currently configures BIG-IP v14.1+
 
 # Instructions
 1. Copy infile.txt and srgcheck.sh to a directory on the BIG-IP
