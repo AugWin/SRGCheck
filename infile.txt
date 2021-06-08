@@ -16,7 +16,7 @@ tmsh list sys httpd auth-pam-dashboard-timeout#on
 tmsh list sys httpd max-clients#10
 tmsh list sys httpd auth-pam-idle-timeout#600
 tmsh list sys httpd ssl-ciphersuite#FIPS:!RSA:!SSLv3:!TLSv1:!3DES:!ADH
-tmsh list sys httpd ssl-protocol#all -SSLv3 -TLSv1
+tmsh list sys httpd ssl-protocol#TLSv1.2
 tmsh list sys httpd redirect-http-to-https#enabled
 tmsh list cli global-settings idle-timeout#10
 tmsh list sys global-settings console-inactivity-timeout#600
